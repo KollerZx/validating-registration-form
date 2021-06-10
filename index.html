@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form class="form-control formulario" action="/" method="POST">
+            <label for="" class="form-label col-md-6">Nome</label>
+            <input type="text" class="form-control nome validate">
+            <label for="" class="form-label ">Sobrenome</label>
+            <input type="text" class="form-control sobrenome validate">
+            <label for="" class="form-label ">CPF</label>
+            <input type="text" class="form-control cpf validate">
+            <label for="" class="form-label ">Usuário</label>
+            <input type="text" class="form-control usuario validate">
+            <label for="" class="form-label ">Senha</label>
+            <input type="password" class="form-control senha validate">
+            <label for="" class="form-label">Repetir Senha</label>
+            <input type="password" class="form-control repetir-senha validate">
+            <button class="btn btn-success w-100 mt-4">Enviar</button>
+
+        </form>
+    </div>
+    <script src="assets/js/validCPF.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
